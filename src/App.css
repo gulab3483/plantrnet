@@ -1,0 +1,217 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html, #root {
+  height: 100%;
+  font-family: 'Arial', sans-serif;
+}
+
+.landing-container {
+  width: 100vw;
+  height: 100vh;
+  background: white;
+  color: black;
+  overflow: hidden;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 2rem;
+  margin: 1rem auto;
+  max-width: 90%;
+  border-radius: 50px;
+  background: rgba(255, 255, 255, 0.95);
+  color: black;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logo img {
+  width: 150px;
+  height: auto;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 2rem;
+}
+
+.nav-links li {
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a {
+  color: black;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #31A46C;
+}
+
+.nav-links li a.active {
+  color: black;
+}
+
+.nav-links li:hover {
+  color: #31A46C;
+}
+
+.book-btn {
+  background-color: #31A46C;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 30px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.book-btn,
+.explore-btn {
+  transition: background-color 0.3s ease;
+}
+
+.book-btn:hover,
+.explore-btn:hover {
+  background-color: #278f5d;
+}
+
+.hero-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 80px);
+  text-align: center;
+  padding: 0 2rem;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-size: 1rem;
+  max-width: 600px;
+  margin: 0 auto 2rem auto;
+  line-height: 1.5;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.explore-btn, .about-btn {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  font-weight: bold;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.explore-btn {
+  background-color: #31A46C;
+  color: white;
+}
+
+.about-btn {
+  background-color: white;
+  color: black;
+}
+
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+    font-size: 2rem;
+    cursor: pointer;
+    margin-left: auto;
+    margin-top: 0.25rem;
+  }
+
+  .nav-links {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .nav-links.nav-active {
+    display: flex;
+    padding: 0.5rem 0;
+  }
+
+  .navbar {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.25rem 1rem;
+    max-width: 95%;
+    border-radius: 30px;
+    position: relative;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    padding-left: 1rem;
+  }
+
+  .hero-section {
+    padding: 1rem;
+    text-align: left;
+    align-items: flex-start;
+  }
+
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .hero-content p {
+    font-size: 0.95rem;
+    text-align: left;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .explore-btn, .about-btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  .logo img {
+    width: 120px;
+    margin-top: 0.25rem;
+  }
+}
