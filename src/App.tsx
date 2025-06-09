@@ -2,6 +2,7 @@ import { Routes, Route, Link, useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 import Explore from './Explore';
 import './App.css';
+import logo from './assets/images/plantrnet_logo.png';
 
 function App() {
   const navigate = useNavigate();
@@ -12,7 +13,7 @@ function App() {
       <nav className="navbar">
         <div className="logo">
           <Link to="/" className="nav-link">
-            <img src="/src/assets/images/plantrnet_logo.png" alt="Plantrnet Logo" />
+            <img src={logo} alt="Plantrnet Logo" />
           </Link>
         </div>
         <div className="hamburger" onClick={() => setMobileMenuOpen(!isMobileMenuOpen)}>
