@@ -10,15 +10,20 @@ function App() {
 
   return (
     <div className="landing-container">
-      <nav className="navbar">
+      <nav className={`navbar ${isMobileMenuOpen ? 'menu-open' : ''}`}>
         <div className="logo">
           <Link to="/" className="nav-link">
             <img src={logo} alt="Plantrnet Logo" />
           </Link>
         </div>
-        <div className="hamburger" onClick={() => setMobileMenuOpen(!isMobileMenuOpen)}>
-          ☰
-        </div>
+        <div 
+  className={`hamburger ${isMobileMenuOpen ? 'open' : ''}`} 
+  onClick={() => setMobileMenuOpen(!isMobileMenuOpen)}
+>
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
         <ul className={`nav-links ${isMobileMenuOpen ? 'nav-active' : ''}`}>
           <li><Link to="/" className="nav-link">Home</Link></li>
           <li><span className="nav-link">About</span></li>
