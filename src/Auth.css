@@ -59,12 +59,15 @@
   border-radius: 8px;
   font-size: 1rem;
   transition: border-color 0.3s ease;
+  background-color: white !important; /* Force white background */
+  color: black !important;
 }
 
 .form-group input:focus {
   outline: none;
   border-color: #31A46C;
   box-shadow: 0 0 0 2px rgba(49, 164, 108, 0.1);
+  background-color: white !important;
 }
 
 .auth-submit-btn {

@@ -92,6 +92,56 @@ body, html, #root {
   background-color: #278f5d;
 }
 
+.sign-in-btn {
+  background: none !important;
+  border: none !important;
+  color: #31A46C !important;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color 0.3s ease;
+  padding: 0.5rem 1rem;
+  border-radius: 0 !important;
+  font-size: 1rem;
+}
+
+.sign-in-btn:hover {
+  color: #278f5d !important;
+  background: none !important;
+}
+
+.sign-out-btn {
+  background: none !important;
+  border: none !important;
+  color: #31A46C !important;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color 0.3s ease;
+  padding: 0.5rem 1rem;
+  border-radius: 0 !important;
+  font-size: 1rem;
+}
+
+.sign-out-btn:hover {
+  color: #278f5d !important;
+  background: none !important;
+}
+
+.user-menu {
+  display: flex;
+  align-items: center;
+  gap: 2rem; /* More spacing between name and sign out */
+}
+
+.user-name {
+  color: #31A46C;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
 .hero-section {
   display: flex;
   justify-content: center;
