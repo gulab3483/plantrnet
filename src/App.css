@@ -21,7 +21,7 @@ body, html, #root {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.25rem 1.5rem; /* Reduced from 0.5rem 2rem */
+  padding: 0.5rem 1.5rem; /* Reduced from 0.5rem 2rem */
   margin: 0.5rem auto; /* Reduced from 1rem auto */
   max-width: 85%; /* Reduced from 90% */
   border-radius: 40px; /* Reduced from 50px */
